@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/1affd19e03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+
+    <!------- Courses ------->
+    <section class="courses">
+        <h1>Courses We Offer</h1>
+        <p>We offer various courses covering wide range of pedagogy
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p> This is equal to high school and +2 eqivalent.We offer Courses in Management Science Humanities and Arts
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p> We offer Under Graduate Courses in Management Science Humanities and Arts with hands on experience and quality teaching
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post-Graduation</h3>
+                <p> We offer Post Graduate Courses in Management Science Humanities and Arts with hands on experience and quality teaching
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-------- Facilities -------->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We offer World Class Facalities to Our Students
+        </p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="img/library.png">
+                <h3>World Class Library</h3>
+                <p>Our World Class Library is gifted with the stack of 10000 books.We have books from different aspects.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>We are blessed with largest playground od 20 acre which is enough to host olympic tournaments.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>We Focus on hygenic food and good health within our ecosystem.We maintain Hygine in every aspect of univeristy</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------- Footer -------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lets Know More About our Institution<br> Join with us to have a wonderful academic life ahead</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-- ------------JavaScript For Toggle Menu--------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
